@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import RuloBoton from './components/RuloBoton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,6 +13,7 @@ export default function Home() {
           Todo listo!&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
+        <RuloBoton label="RuloBoton. Dame click"/>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
