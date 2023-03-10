@@ -1,10 +1,13 @@
+import Link from 'next/link'
 import React from 'react'
 
 const index = (props: any) => {
+  const {href, label} = props
   return (
-    <button>{props.label}</button>
+    <Link href={href}>{label}</Link>
   )
 }
+
 
 export default index
 
@@ -17,3 +20,4 @@ export default index
 //         </>
 //     )
   
+
