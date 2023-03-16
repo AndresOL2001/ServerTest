@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main}>      
       <div className={styles.description}>
         <p>
           Todo listo!&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
-        <RuloBoton label="RuloBoton. Dame click"/>
+        <RuloBoton label="RuloBoton. Dame click" href="/"/>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

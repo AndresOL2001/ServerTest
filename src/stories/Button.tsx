@@ -18,6 +18,8 @@ interface ButtonProps {
    * Button contents
    */
   label: string;
+
+  roundedButton?: boolean
   /**
    * Optional click handler
    */
@@ -32,13 +34,16 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  roundedButton = true,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
+  const rounded = roundedButton ? 'rounded' : ''
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode, `storybook-button--${rounded}`].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >

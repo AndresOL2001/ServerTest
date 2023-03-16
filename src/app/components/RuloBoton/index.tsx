@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 const index = (props: any) => {
   return (
-    <button>{props.label}</button>
+    <Link href={props.href} className={props.className}>{props.label}</Link>
   )
 }
 
