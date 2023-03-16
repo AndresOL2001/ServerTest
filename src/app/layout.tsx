@@ -1,3 +1,4 @@
+import Navigation from './components/Navigation'
 import './globals.css'
 import Navigation from "@/app/components/Navigation"
 

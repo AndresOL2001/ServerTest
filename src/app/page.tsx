@@ -1,19 +1,23 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Imprima, Inter } from 'next/font/google'
 import styles from './page.module.css'
-import RuloBoton from './components/RuloBoton'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <main className={styles.main}>      
       <div className={styles.description}>
+        <Image src="/car.jpg" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='carro' />
         <p>
           Todo listo!&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
+<<<<<<< HEAD
         <RuloBoton label="RuloBoton. Dame click" href="/"/>
+=======
+>>>>>>> 6bf2790564ef6e83c8af6b9f3c1b78ffb93f225d
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
