@@ -11,6 +11,9 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/utils": "^4.11.3",
     "@mui/icons-material": "^5.11.11",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
