@@ -1,13 +1,15 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Imprima, Inter } from 'next/font/google'
 import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Image src="/car.jpg" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='carro' />
         <p>
           Todo listo!&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>

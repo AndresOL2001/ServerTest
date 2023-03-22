@@ -1,4 +1,6 @@
+import Navigation from './components/Navigation'
 import './globals.css'
+import Head from 'next/head';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"/>
+      </Head>
+      <body>
+        <Navigation />
+        {children}
+      </body>
     </html>
   )
 }
