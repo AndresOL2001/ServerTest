@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Roboto', sans-serif, 'arial', 'Helvetica Neue', 'Noto Sans'],
+      'sans': ['Roboto', 'sans-serif', 'arial', 'Helvetica Neue', 'Noto Sans'],
     },
     fontSize: {
       sm: '0.8rem',
