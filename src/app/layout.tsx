@@ -1,4 +1,3 @@
-// @ts-nocheck
 import './globals.css'
 import Head from 'next/head';
 
