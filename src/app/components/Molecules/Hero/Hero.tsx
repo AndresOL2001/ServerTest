@@ -16,7 +16,7 @@ const Hero: React.FC<IHero> = ({ name, height, url }) => {
       }}
       className={`w-full px-5 py-5 flex items-end`}
     >
-      <h1 className={styles.title}>Welcome, {name}</h1>
+      <h1 className={styles.title + " text-5xl font-sans"}>Welcome, {name}</h1>
     </header>
   );
 };
