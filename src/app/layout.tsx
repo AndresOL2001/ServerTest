@@ -1,4 +1,3 @@
-import Navigation from './components/Navigation'
 import './globals.css'
 import Head from 'next/head';
 
@@ -20,7 +19,6 @@ export default function RootLayout({
           rel="stylesheet"/>
       </Head>
       <body>
-        <Navigation />
         {children}
       </body>
     </html>
