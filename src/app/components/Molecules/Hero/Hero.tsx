@@ -11,6 +11,7 @@ const Hero: React.FC<IHero> = ({ name, height, url }) => {
     <header
       style={{
         backgroundImage: `url(${url})`,
+        backgroundRepeat: 'no-repeat',
         height: `${height}px`,
       }}
       className={`w-full px-5 py-5 flex items-end`}
