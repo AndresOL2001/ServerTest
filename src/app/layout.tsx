@@ -1,4 +1,3 @@
-import Navigation from './components/Navigation'
 import './globals.css'
 import Head from 'next/head';
 
@@ -19,8 +18,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"/>
       </Head>
-      <body>
-        <Navigation />
+      <body>        
         {children}
       </body>
     </html>
