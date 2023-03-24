@@ -1,15 +1,21 @@
 import { Container } from '@material-ui/core';
 import Image from 'next/image';
+import Link from 'next/link'
 
 
 export interface IBaseTemplate {
   image: string;
-  item: string;
+  items: string[];
   height: number;
   width: number;
 }
 
-const Navbar: React.FC<IBaseTemplate> = ({image, item, width, height}) => {
+const Navbar: React.FC<IBaseTemplate> = ({image, items, width, height}) => {
+  
+  const renderListOfUserNames = (items:string[]) => {
+    return items?.map(item => <li><Link href=''></Link>{item}</li>)
+  }
+
   return (
     <>
       <div className='flex flex-col items-center'>
@@ -25,10 +31,7 @@ const Navbar: React.FC<IBaseTemplate> = ({image, item, width, height}) => {
 
             <div className='pr-5 py-4 border-r-[1px] border-sky-400'>
               <ul className='flex gap-3'>
-                <li>Home</li>
-                <li className=''>About</li>
-                <li>Our services</li>
-                <li>Blog</li>
+                {renderListOfUserNames(items)}
               </ul>
             </div>
 

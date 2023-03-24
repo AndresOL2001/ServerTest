@@ -2,7 +2,12 @@ import { IBaseTemplate } from './Navbar';
 
 const navbar: IBaseTemplate = {
   image: '/logo-blue.svg',
-  item: 'MENU',
+  items: [
+    "Home",
+    "About us",
+    "Our services",
+    "Blog",
+  ],
   height: 20,
   width: 30,
 };
