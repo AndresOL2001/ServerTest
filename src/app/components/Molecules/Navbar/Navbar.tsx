@@ -1,16 +1,15 @@
-import { Container } from '@material-ui/core';
 import Image from 'next/image';
 import Link from 'next/link'
 
 
-export interface IBaseTemplate {
-  image: string;
+export interface INavbar {
+  logo: string;
   items: string[];
   height: number;
   width: number;
 }
 
-const Navbar: React.FC<IBaseTemplate> = ({image, items, width, height}) => {
+const Navbar: React.FC<INavbar> = ({logo, items, width, height}) => {
   
   const renderListOfUserNames = (items:string[]) => {
     return items?.map(item => <li><Link href=''></Link>{item}</li>)
@@ -18,11 +17,11 @@ const Navbar: React.FC<IBaseTemplate> = ({image, items, width, height}) => {
 
   return (
     <>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center font-sans'>
         <div className='w-2/3 flex gap-20 justify-center p-5 relative'>
           <Image
             priority
-            src={image}
+            src={logo}
             height={height}
             width={width}
             alt=""

@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Navbar, { IBaseTemplate } from './Navbar';
-import { mockNavbarTemplateProps } from './BaseTemplate.mocks';
+import Navbar, { INavbar } from './Navbar';
+import { mockNavbarTemplateProps } from './Navbar.mocks';
 
 export default {
   title: 'Navbar/Main',
@@ -19,4 +19,4 @@ export const Base = Template.bind({});
 
 Base.args = {
   ...mockNavbarTemplateProps.navbar,
-} as IBaseTemplate;
+} as INavbar;

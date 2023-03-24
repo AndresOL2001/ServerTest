@@ -1,15 +1,15 @@
-import { IBaseTemplate } from './Navbar';
+import { INavbar } from './Navbar';
 
-const navbar: IBaseTemplate = {
-  image: '/logo-blue.svg',
+const navbar: INavbar = {
+  logo: '/logo-blue.svg',
   items: [
     "Home",
     "About us",
     "Our services",
     "Blog",
   ],
-  height: 20,
-  width: 30,
+  height: 50,
+  width: 150,
 };
 
 export const mockNavbarTemplateProps = {

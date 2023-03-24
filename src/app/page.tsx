@@ -10,7 +10,17 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Navbar image='/logo-blue.svg' width={150} height={50} />
+      <Navbar
+        height={50}
+        items={[
+          'Home',
+          'About us',
+          'Our services',
+          'Blog'
+        ]}
+        logo="/logo-blue.svg"
+        width={150}
+      />
     </main>
   )
 }
