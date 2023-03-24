@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Hero name="hola" height="200" url="/heroBackground.svg"/>
+      <Hero name="hola" height="200" url="/heroBackground.svg" rounded={12}/>
     </main>
   )
 }
