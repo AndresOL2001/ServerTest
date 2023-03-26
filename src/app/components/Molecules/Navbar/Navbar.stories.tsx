@@ -5,18 +5,25 @@ import { mockNavbarTemplateProps } from './Navbar.mocks';
 export default {
   title: 'Navbar/Main',
   component: Navbar,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {},
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 } as ComponentMeta<typeof Navbar>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Navbar> = (args) => (
   <Navbar {...args} />
 );
 
-export const Base = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-
-Base.args = {
+export const Main = Template.bind({});
+Main.args = {
   ...mockNavbarTemplateProps.navbar,
+  backgroundColor: '#ffff',
+  userNav: false,
+} as INavbar;
+
+export const TopBar = Template.bind({});
+TopBar.args = {
+  ...mockNavbarTemplateProps.navbar,
+  backgroundColor: '#1B3156',
+  userNav: true,
 } as INavbar;

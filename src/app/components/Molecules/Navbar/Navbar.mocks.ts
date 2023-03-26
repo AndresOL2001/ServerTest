@@ -10,6 +10,11 @@ const navbar: INavbar = {
   ],
   height: 50,
   width: 150,
+  userInfo: {
+    id: '0', 
+    username: 'Johnathan',
+    occupation: 'Software Engineer',
+  }
 };
 
 export const mockNavbarTemplateProps = {
