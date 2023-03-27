@@ -31,7 +31,10 @@ module.exports = {
         fontWeight: '400',
       }],
     },
-    colors:{
+
+    },
+    extend: {
+      colors:{
       'blue-primary':'#0072B5',
       'secondary':'#1B3156',
       'light':'#EFEFEF',
@@ -71,9 +74,7 @@ module.exports = {
         700:'#272727',
         800:'#0F0F0F',
       }
-
     },
-    extend: {},
   },
   plugins: [],
 }
