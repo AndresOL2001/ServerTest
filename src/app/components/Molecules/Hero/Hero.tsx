@@ -1,13 +1,12 @@
-import styles from './Hero.module.css';
-
 export interface IHero {
   name: string,
   height: string,
   url: string,
-  rounded: number
+  rounded: number,
+  padding: number
 }
 
-const Hero: React.FC<IHero> = ({ name, height, url, rounded }) => {
+const Hero: React.FC<IHero> = ({ name, height, url, rounded, padding }) => {
   return (
     <header
       style={{
@@ -15,11 +14,12 @@ const Hero: React.FC<IHero> = ({ name, height, url, rounded }) => {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         borderRadius: `${rounded}px`,
-        height: `${height}px`,        
+        height: `${height}px`,   
+        padding: `${padding}px`     
       }}
-      className={`w-full px-5 py-5 flex items-end`}
+      className={`w-full flex items-end`}
     >
-      <h1 className={"text-light text-5xl font-sans"}>Welcome, { name }</h1>
+      <h1 className={"text-light font-serif"}>Welcome, { name }</h1>
     </header>
   );
 };
