@@ -11,25 +11,15 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['Roboto', 'sans-serif', 'arial', 'Helvetica Neue', 'Noto Sans'],
+      'serif': ['Roboto-serif', 'Georgia', 'Cambria'],
     },
     fontSize: {
-      sm: '0.8rem',
-      base: '1rem',
-      xl: ['1.5rem', {
-        fontWeight: '400',
-      }],
-      '2xl': ['2rem', {
-        fontWeight: '400',
-      }],
-      '3xl': ['2.5rem', {
-        fontWeight: '400',
-      }],
-      '4xl': ['3rem', {
-        fontWeight: '400',
-      }],
-      '5xl': ['3.375rem', {
-        fontWeight: '400',
-      }],
+      xs: '0.875rem',
+      sm: '1rem',
+      base: '1.125rem',
+      l: '1.375rem',
+      xl: '1.625rem',
+      '2xl': '2rem',
     },
     extend: {
         colors:{
