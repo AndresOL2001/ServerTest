@@ -1,19 +1,21 @@
 import { INavbar } from './Navbar';
+import { UserInfo } from '../../typing';
+
+const userInfo: UserInfo = {
+  username: "Johnathan",
+  occupation: "Software Engineer"
+}
 
 const navbar: INavbar = {
-  logo: '/logo-blue.svg',
+  logoUrl: '/logo-blue.svg',
   showLogo: true,
-  items: [
+  navItems: [
     "Home",
     "About us",
     "Our services",
     "Blog",
   ],
-  userInfo: {
-    id: '0', 
-    username: 'Johnathan',
-    occupation: 'Software Engineer',
-  }
+  userInformation: userInfo,
 };
 
 export const mockNavbarTemplateProps = {

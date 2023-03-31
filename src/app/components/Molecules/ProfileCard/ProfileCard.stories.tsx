@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import ProfileCard, { IProfileCard } from './ProfileCard';
+import ProfileCard from './ProfileCard';
+import { UserInfo } from '../../typing';
 import { mockNavbarTemplateProps } from './ProfileCard.mocks';
 
 export default {
@@ -17,4 +18,4 @@ const Template: ComponentStory<typeof ProfileCard> = (args) => (
 export const Main = Template.bind({});
 Main.args = {
   ...mockNavbarTemplateProps.profileCard,
-} as IProfileCard;
+} as UserInfo;

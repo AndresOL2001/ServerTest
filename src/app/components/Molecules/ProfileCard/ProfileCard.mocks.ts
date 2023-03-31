@@ -1,11 +1,8 @@
-import { IProfileCard } from './ProfileCard';
+import { UserInfo } from '../../typing';
 
-const profileCard: IProfileCard = {
-  userInfo: {
-    id: '0', 
-    username: 'Johnathan',
-    occupation: 'Software Engineer',
-  }
+const profileCard: UserInfo = {
+  username: "Johnathan",
+  occupation: "Software Engineer"
 };
 
 export const mockNavbarTemplateProps = {

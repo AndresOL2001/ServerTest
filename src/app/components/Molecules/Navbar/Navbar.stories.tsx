@@ -18,25 +18,25 @@ export const Main = Template.bind({});
 Main.args = {
   ...mockNavbarTemplateProps.navbar,
   backgroundColor: '#ffff',
-  userNav: false,
+  isUserNav: false,
   primary: true,
 } as INavbar;
 
 export const TopBar = Template.bind({});
 TopBar.args = {
   ...mockNavbarTemplateProps.navbar,
-  logo: '/logo-white.svg',
+  logoUrl: '/logo-white.svg',
   backgroundColor: '#1B3156',
-  userNav: true,
+  isUserNav: true,
   primary: true,
 } as INavbar;
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   ...mockNavbarTemplateProps.navbar,
-  logo: '/logo-white.svg',
+  logoUrl: '/logo-white.svg',
   showLogo: false,
-  items: [
+  navItems: [
     "Aviada careers",
     "Our culture",
     "Benefits and perks",
@@ -45,7 +45,7 @@ Secondary.args = {
     "Send your resume",
   ],
   backgroundColor: '#1B3156',
-  userNav: false,
+  isUserNav: false,
   primary: false,
 } as INavbar;
 
@@ -53,7 +53,7 @@ export const BlogNav = Template.bind({});
 BlogNav.args = {
   ...mockNavbarTemplateProps.navbar,
   showLogo: false,
-  items: [
+  navItems: [
     "Todo",
     "Cultura Laboral",
     "Desarollo",
@@ -61,7 +61,7 @@ BlogNav.args = {
     "UX/UI",
   ],
   backgroundColor: '#1B3156',
-  userNav: false,
+  isUserNav: false,
   primary: false,
   showSearchBar: true,
 } as INavbar;
