@@ -10,6 +10,7 @@ const base: IPanel = {
   border_radius:10,
   border_weight: 1,
   drop_shadow: ['10','0','10','red'],
+  children:'',
 };
 
 export const mockPanelProps = {
