@@ -3,7 +3,7 @@ import SearchBar, { ISearchBar } from './SearchBar';
 import { mockNavbarTemplateProps } from './SearchBar.mocks';
 
 export default {
-  title: 'Cards/SearchBar',
+  title: 'Atoms/SearchBar',
   component: SearchBar,
   argTypes: {
     backgroundColor: { control: 'color' },
