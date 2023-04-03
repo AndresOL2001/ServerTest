@@ -22,7 +22,7 @@ const SidebarTemplate: React.FC<ISidebar> = ({isActive}) => {
 
   return <>
 
-    <aside id="default-sidebar" className="fixed top-0 left-0 w-[278px] h-[982px] h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <aside id="default-sidebar" className="border border-[#EFEFEF] fixed top-0 left-0 w-[278px] h-[982px] h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
       <div className="h-full ml-[23px] mr-[43px] mt-[30px] font-sans overflow-y-auto bg-white">
         <ul className="space-y-2 ">
           <ListItem text='Dashboard' 
