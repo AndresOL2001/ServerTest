@@ -10,19 +10,14 @@ import ListItem from '../../Atoms/ListItem/ListItem';
 
 export interface ISidebar {
   sampleTextProp: string;
-  isActive:boolean;
 }
 
-const SidebarTemplate: React.FC<ISidebar> = ({isActive}) => {
-  const [triggerLi, setTriggerLi] =React.useState(isActive ?? false);
-
-  useEffect(() => {
-    setTriggerLi(isActive);
-  },[isActive,setTriggerLi])
-
+const SidebarTemplate: React.FC<ISidebar> = () => {
   return <>
 
-    <aside id="default-sidebar" className="border border-[#EFEFEF] fixed top-0 left-0 w-[278px] h-[982px] h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <aside id="default-sidebar"
+     className="border border-light fixed top-0 left-0 w-[278px] h-[982px]
+      h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
       <div className="h-full ml-[23px] mr-[43px] mt-[30px] font-sans overflow-y-auto bg-white">
         <ul className="space-y-2 ">
           <ListItem text='Dashboard' 
