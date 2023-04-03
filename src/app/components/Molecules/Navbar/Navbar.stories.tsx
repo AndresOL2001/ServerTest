@@ -3,7 +3,7 @@ import Navbar, { INavbar } from './Navbar';
 import { mockNavbarTemplateProps } from './Navbar.mocks';
 
 export default {
-  title: 'Navbar/Main',
+  title: 'Molecules/Navbar',
   component: Navbar,
   argTypes: {
     backgroundColor: { control: 'color' },

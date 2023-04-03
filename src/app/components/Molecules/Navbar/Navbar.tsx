@@ -96,8 +96,11 @@ const Navbar: React.FC<INavbar> = ((props: INavbar) => {
                 {showSearchBar && 
                   <div className='ml-24 rounded-md'>
                     <SearchBar
-                      backgroundColor="#ffffff"
+                      backgroundColor="#ffff"
+                      borderColor="#1067A8"
+                      hasIcon
                       iconColor="#0072B5"
+                      placeHolder="Search"
                     />
                   </div>
                 }

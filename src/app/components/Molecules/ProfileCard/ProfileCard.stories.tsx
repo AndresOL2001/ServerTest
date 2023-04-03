@@ -4,7 +4,7 @@ import { UserInfo } from '../../typing';
 import { mockNavbarTemplateProps } from './ProfileCard.mocks';
 
 export default {
-  title: 'Cards/Profile',
+  title: 'Molecules/ProfileCard',
   component: ProfileCard,
   argTypes: {
     backgroundColor: { control: 'color' },
