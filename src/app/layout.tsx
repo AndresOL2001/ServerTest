@@ -18,7 +18,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"/>
       </Head>
-      <body>        
+      <body>
         {children}
       </body>
     </html>
