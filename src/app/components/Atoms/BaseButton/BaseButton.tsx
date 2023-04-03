@@ -38,18 +38,5 @@ const BaseButton: React.FC<IBaseButton>  = ({
   );
 };
 
-/*const BaseButton: React.FC<IBaseButton> = (
-  { onclickProp, 
-    sampleTextProp, 
-    disable,
-    size = 'mini'}) => {
-  return (
-  <button 
-  disabled={disable ? true : false}
-  className={`primary button--${size}`} onClick={onclickProp}>
-    {sampleTextProp}
-  </button>)
-};*/
-
 
 export default BaseButton;
