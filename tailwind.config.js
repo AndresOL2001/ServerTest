@@ -63,6 +63,8 @@ module.exports = {
           800:'#0F0F0F',
         }
       },
+      boxShadow: {focus: "0 0 10px 0 #0067A9",},
+      dropShadow:{dragged: "0 0 3px 0 #CCDDE4"}
     },
   },
   plugins: [],

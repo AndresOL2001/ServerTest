@@ -1,0 +1,30 @@
+.primary {
+  @apply bg-dark-border text-light rounded-lg;
+}
+
+.primary:hover {
+  @apply bg-blue-primary;
+}
+.primary:disabled {
+  @apply border-gray-100 border bg-muted text-gray-200 overflow-hidden;
+}
+.primary:focus {
+  @apply bg-white text-secondary shadow-blue-primary shadow-focus border-dark-border border overflow-hidden;
+}
+.primary:active {
+  @apply bg-blue-primary shadow-inner text-light overflow-hidden;
+}
+.primary--dragging {
+  @apply bg-blue-primary text-light drop-shadow-dragged;
+}
+
+.button--normal {
+  @apply px-5 py-3.5 text-xl font-sans;
+}
+.button--small {
+  @apply px-4 py-2.5 text-base font-sans;
+}
+
+.button--mini {
+  @apply px-3 py-1.5 text-sm font-sans;
+}

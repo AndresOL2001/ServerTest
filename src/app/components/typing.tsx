@@ -3,3 +3,4 @@ export interface UserInfo {
     occupation: string,
 }
 
+export {default as PrimaryButton} from "./Atoms/BaseButton/BaseButton";
