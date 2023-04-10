@@ -1,7 +1,7 @@
-import { ISidebar } from './Sidebar';
+import { ISidebar } from "./Sidebar";
 
 const base: ISidebar = {
-  sampleTextProp: 'Hello world!',
+  sampleTextProp: "Hello world!",
 };
 
 export const mockBaseTemplateProps = {

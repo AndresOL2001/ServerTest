@@ -1,20 +1,15 @@
-import { INavbar } from './Navbar';
-import { UserInfo } from '../../typing';
+import { INavbar } from "./Navbar";
+import { UserInfo } from "../../typing";
 
 const userInfo: UserInfo = {
   username: "Johnathan",
-  occupation: "Software Engineer"
-}
+  occupation: "Software Engineer",
+};
 
 const navbar: INavbar = {
-  logoUrl: '/logo-blue.svg',
+  logoUrl: "/logo-blue.svg",
   showLogo: true,
-  navItems: [
-    "Home",
-    "About us",
-    "Our services",
-    "Blog",
-  ],
+  navItems: ["Home", "About us", "Our services", "Blog"],
   userInformation: userInfo,
 };
 

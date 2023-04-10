@@ -1,6 +1,6 @@
 export interface UserInfo {
-    username: string,
-    occupation: string,
+  username: string;
+  occupation: string;
 }
 
-export {default as PrimaryButton} from "./Atoms/BaseButton/BaseButton";
+export { default as PrimaryButton } from "./Atoms/BaseButton/BaseButton";

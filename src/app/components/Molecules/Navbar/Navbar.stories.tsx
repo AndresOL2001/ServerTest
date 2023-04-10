@@ -1,23 +1,21 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Navbar, { INavbar } from './Navbar';
-import { mockNavbarTemplateProps } from './Navbar.mocks';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import Navbar, { INavbar } from "./Navbar";
+import { mockNavbarTemplateProps } from "./Navbar.mocks";
 
 export default {
-  title: 'Molecules/Navbar',
+  title: "Molecules/Navbar",
   component: Navbar,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof Navbar>;
 
-const Template: ComponentStory<typeof Navbar> = (args) => (
-  <Navbar {...args} />
-);
+const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
 export const Main = Template.bind({});
 Main.args = {
   ...mockNavbarTemplateProps.navbar,
-  backgroundColor: '#ffff',
+  backgroundColor: "#ffff",
   isUserNav: false,
   primary: true,
 } as INavbar;
@@ -25,8 +23,8 @@ Main.args = {
 export const TopBar = Template.bind({});
 TopBar.args = {
   ...mockNavbarTemplateProps.navbar,
-  logoUrl: '/logo-white.svg',
-  backgroundColor: '#1B3156',
+  logoUrl: "/logo-white.svg",
+  backgroundColor: "#1B3156",
   isUserNav: true,
   primary: true,
 } as INavbar;
@@ -34,7 +32,7 @@ TopBar.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   ...mockNavbarTemplateProps.navbar,
-  logoUrl: '/logo-white.svg',
+  logoUrl: "/logo-white.svg",
   showLogo: false,
   navItems: [
     "Aviada careers",
@@ -44,7 +42,7 @@ Secondary.args = {
     "Openings",
     "Send your resume",
   ],
-  backgroundColor: '#1B3156',
+  backgroundColor: "#1B3156",
   isUserNav: false,
   primary: false,
 } as INavbar;
@@ -53,14 +51,8 @@ export const BlogNav = Template.bind({});
 BlogNav.args = {
   ...mockNavbarTemplateProps.navbar,
   showLogo: false,
-  navItems: [
-    "Todo",
-    "Cultura Laboral",
-    "Desarollo",
-    "Management 3.0",
-    "UX/UI",
-  ],
-  backgroundColor: '#1B3156',
+  navItems: ["Todo", "Cultura Laboral", "Desarollo", "Management 3.0", "UX/UI"],
+  backgroundColor: "#1B3156",
   isUserNav: false,
   primary: false,
   showSearchBar: true,

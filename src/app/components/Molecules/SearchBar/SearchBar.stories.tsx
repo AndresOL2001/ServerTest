@@ -1,18 +1,16 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import SearchBar, { ISearchBar } from './SearchBar';
-import { mockNavbarTemplateProps } from './SearchBar.mocks';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import SearchBar, { ISearchBar } from "./SearchBar";
+import { mockNavbarTemplateProps } from "./SearchBar.mocks";
 
 export default {
-  title: 'Atoms/SearchBar',
+  title: "Atoms/SearchBar",
   component: SearchBar,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof SearchBar>;
 
-const Template: ComponentStory<typeof SearchBar> = (args) => (
-  <SearchBar {...args} />
-);
+const Template: ComponentStory<typeof SearchBar> = (args) => <SearchBar {...args} />;
 
 export const Main = Template.bind({});
 Main.args = {

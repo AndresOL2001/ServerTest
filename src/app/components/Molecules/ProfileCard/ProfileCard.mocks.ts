@@ -1,8 +1,8 @@
-import { UserInfo } from '../../typing';
+import { UserInfo } from "../../typing";
 
 const profileCard: UserInfo = {
   username: "Johnathan",
-  occupation: "Software Engineer"
+  occupation: "Software Engineer",
 };
 
 export const mockNavbarTemplateProps = {
