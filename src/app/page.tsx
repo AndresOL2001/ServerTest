@@ -7,8 +7,5 @@ import Navbar from './components/Molecules/Navbar/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
-  return (
-   <main className={styles.main}></main>
-  )
+   return <main className={styles.main}></main>;
 }
