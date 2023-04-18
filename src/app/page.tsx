@@ -10,23 +10,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
    return <>
-     <Navbar
-  backgroundColor="#1B3156"
-  isUserNav
-  logoUrl="/logo-white.svg"
-  navItems={[
-    'Home',
-    'About us',
-    'Our services',
-    'Blog'
-  ]}
-  primary
-  showLogo
-  userInformation={{
-    occupation: 'Software Engineer',
-    username: 'Johnathan'
-  }}
-/>
+   
+   <Sidebar/>
       
       <main className={styles.main}>
    </main>
