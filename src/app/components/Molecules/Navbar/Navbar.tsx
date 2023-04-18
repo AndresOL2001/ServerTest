@@ -19,9 +19,14 @@ export interface INavbar {
 const Navbar: React.FC<INavbar> = ((props: INavbar) => {
   const {logoUrl, showLogo, showSearchBar, navItems, isUserNav, userInformation, backgroundColor, textColor, primary} = props
 
-  const renderListOfMenu = (items:string[], styles?: string) => {
-    return items?.map(item => <li className={styles}><Link href='' />{item}</li>)
-  }
+const renderListOfMenu = (items: string[], styles?: string) => {
+    return items?.map((item, index) => (
+      <li key={index} className={styles}>
+        <Link href="" />
+        {item}
+      </li>
+    ));
+  };
 
   return (
     <nav className='flex justify-center font-sans' style={{backgroundColor, color: textColor}}>
