@@ -13,7 +13,6 @@ export default function Home() {
      <Sidebar/>
       
       <main className={styles.main}>
-      <h1>Servidor de prueba activao</h1>
    </main>;
       </>
 }
